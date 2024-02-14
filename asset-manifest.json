@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Stomatam-/static/css/main.7451ac61.css",
-    "main.js": "/Stomatam-/static/js/main.74a41316.js",
+    "main.js": "/Stomatam-/static/js/main.b6c615c1.js",
     "index.html": "/Stomatam-/index.html",
     "main.7451ac61.css.map": "/Stomatam-/static/css/main.7451ac61.css.map",
-    "main.74a41316.js.map": "/Stomatam-/static/js/main.74a41316.js.map"
+    "main.b6c615c1.js.map": "/Stomatam-/static/js/main.b6c615c1.js.map"
   },
   "entrypoints": [
     "static/css/main.7451ac61.css",
-    "static/js/main.74a41316.js"
+    "static/js/main.b6c615c1.js"
   ]
 }
