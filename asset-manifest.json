@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Stomatam-/static/css/main.dd51edfe.css",
+    "main.js": "/Stomatam-/static/js/main.e19c3801.js",
+    "index.html": "/Stomatam-/index.html",
+    "main.dd51edfe.css.map": "/Stomatam-/static/css/main.dd51edfe.css.map",
+    "main.e19c3801.js.map": "/Stomatam-/static/js/main.e19c3801.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd51edfe.css",
+    "static/js/main.e19c3801.js"
+  ]
+}
