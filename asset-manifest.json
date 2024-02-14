@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Stomatam-/static/css/main.dd51edfe.css",
-    "main.js": "/Stomatam-/static/js/main.766aaaec.js",
+    "main.css": "/Stomatam-/static/css/main.7451ac61.css",
+    "main.js": "/Stomatam-/static/js/main.74a41316.js",
     "index.html": "/Stomatam-/index.html",
-    "main.dd51edfe.css.map": "/Stomatam-/static/css/main.dd51edfe.css.map",
-    "main.766aaaec.js.map": "/Stomatam-/static/js/main.766aaaec.js.map"
+    "main.7451ac61.css.map": "/Stomatam-/static/css/main.7451ac61.css.map",
+    "main.74a41316.js.map": "/Stomatam-/static/js/main.74a41316.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd51edfe.css",
-    "static/js/main.766aaaec.js"
+    "static/css/main.7451ac61.css",
+    "static/js/main.74a41316.js"
   ]
 }
