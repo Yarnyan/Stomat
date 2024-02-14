@@ -28,7 +28,7 @@
     }
     .Qow {
         padding: 0 20px !important;
-        height: 650px !important; 
+        height: 570px !important; 
     }
     .Qow__body-item {
         justify-content: flex-start !important;
@@ -67,7 +67,7 @@
         top: 390px;
     }
     .Employees {
-        height: 450px !important;
+        height: 420px !important;
     }
     .Employees__body {
         margin-top: 60px !important;
@@ -78,7 +78,7 @@
         font-size: var(--mobileTitleSize) !important; 
     }
     .Employees__body-items {
-        height: 100%;
+        height: 400px;
         padding: 0 16px !important;
     }
     .Employees__items-item {
@@ -134,10 +134,10 @@
     }
     .Testimonials__body {
         margin-top: 60px !important;
-        height: 100%;
+        height: 100% !important;
     }
     .Testimonials__body-items {
-        height: 100%;
+        height: 290px !important;
     }
     .Testimonials__body-subtitle h1 {
         font-size: var(--mobileTitleSize) !important;

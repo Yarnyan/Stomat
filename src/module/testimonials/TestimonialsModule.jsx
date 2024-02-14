@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import TestimonialsComponent from '../../components/testimonials/TestimonialsComponent'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { Testimonials } from '../../data/data'
 export default function TestimonialsModule() {
     const [testimonials, setTestimonials] = useState([])
@@ -32,12 +32,12 @@ export default function TestimonialsModule() {
                         spaceBetween={50}
                         centeredSlides={true}
                         slidesPerView={slidesPerView}
-                        modules={[Autoplay, Navigation]}
-                        navigation={true}
-                        // autoplay={{
-                        // delay: 6000,
-                        // disableOnInteraction: false,
-                        // }}
+                        modules={[Autoplay, Pagination]}
+                        pagination={true}
+                        autoplay={{
+                        delay: 6000,
+                        disableOnInteraction: false,
+                        }}
                     >
                         {testimonials.map((item, index) => {
                             return (

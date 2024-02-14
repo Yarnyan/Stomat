@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from 'react'
-import QowComponent from '../../components/quality of work/QowComponent'
+import React, { useEffect, useState } from 'react';
+import QowComponent from '../../components/quality of work/QowComponent';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation} from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { sliderQow } from '../../data/data';
+
 export default function QowModule() {
-  const [sliderItems, setSliderItems] = useState([])
+  const [sliderItems, setSliderItems] = useState([]);
   const [slidesPerView, setSlidesPerView] = useState(() => getInitialSlidesPerView());
 
   function getInitialSlidesPerView() {
@@ -25,30 +27,31 @@ export default function QowModule() {
     setSlidesPerView(getInitialSlidesPerView());
   };
 
+  const isMobile = window.innerWidth <= 768;
+
   return (
-    <div className='Qow'>
+    <div className="Qow">
       <div className="Qow__body">
         <Swiper
           loop={true}
           spaceBetween={50}
           centeredSlides={true}
           slidesPerView={1}
-          modules={[Autoplay, Navigation]}
-          navigation={true}
-          // autoplay={{
-          //   delay: 6000,
-          //   disableOnInteraction: false,
-          // }}
+          modules={[Autoplay, Navigation, Pagination]}
+          navigation={!isMobile}
+          pagination={isMobile}
+          autoplay={{
+            delay: 6000,
+            disableOnInteraction: false,
+          }}
         >
-          {sliderItems.map((item, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <QowComponent id={item.id} subtitle={item.subtitle} title={item.title} image={item.image}/>
-              </SwiperSlide>
-            )
-          })}
+          {sliderItems.map((item, index) => (
+            <SwiperSlide key={index}>
+              <QowComponent id={item.id} subtitle={item.subtitle} title={item.title} image={item.image} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
-  )
+  );
 }

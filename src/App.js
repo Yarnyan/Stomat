@@ -4,7 +4,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/as" element={<MainPage />}/>
+        <Route path="/Stomatologia_№1" element={<MainPage />}/>
       </Routes>
     </BrowserRouter>
   );
