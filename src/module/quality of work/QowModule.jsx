@@ -32,7 +32,7 @@ export default function QowModule() {
           loop={true}
           spaceBetween={50}
           centeredSlides={true}
-          slidesPerView={slidesPerView}
+          slidesPerView={1}
           modules={[Autoplay, Navigation]}
           navigation={true}
           // autoplay={{

@@ -8,16 +8,15 @@ export default function HeaderComponent() {
             <div className="Header__items-navigation">
                 <nav>
                     <ul className='Header__navigation-items'>
-                        <li className='Navigation__item'>Специалисты</li>
+                        <li className='Navigation__item hide'>Специалисты</li>
                         <li className='Navigation__item hide'>Услуги</li>
                         <li className='Navigation__item hide'>Отзывы</li>
-                        <li className='Navigation__item hide'>Обратный звонок</li>
                         <li className='Navigation__item'>Где нас найти?</li>
-                        <li className='Navigation__item hide'>Цены</li>
+                        <li className='Navigation__item'>Цены</li>
                     </ul>
                 </nav>
             </div>
-            <div className='Header__navigation-button'>
+            <div className='Header__navigation-button hide'>
                 <a href="#">
                     Заказать звонок
                 </a>

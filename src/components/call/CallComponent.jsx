@@ -21,12 +21,12 @@ export default function CallComponent() {
                 </div>
                 <div className='Call__text-form'>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div>
+                        <div className='form__inputs'>
                             <input placeholder="Телефон" {...register("example")} required className='form__input form__input-mobile'/>
                             <input placeholder="Имя" {...register("example")} required className='form__input form__input-name'/>
                         </div>
                         <div className="form__input-submit">
-                            <input type="submit" />
+                            <input type="submit" value='Заказать звонок'/>
                         </div>
                     </form>
                 </div>
