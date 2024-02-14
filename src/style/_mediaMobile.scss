@@ -28,12 +28,13 @@
     }
     .Qow {
         padding: 0 20px !important;
-        height: 550px !important; 
+        height: 650px !important; 
     }
     .Qow__body-item {
         justify-content: flex-start !important;
         padding: 0 !important;
         flex-direction: column;
+        height: 100%;
     }
     .Qow__text-subtitle {
         font-size: var(--mobileTitleSize) !important;
@@ -53,31 +54,41 @@
         height: auto;
         width: 100%;
     }
-    .swiper-button-prev,
-    .swiper-button-next {
-        bottom: 50px !important;
+    .Testimonials .swiper-button-prev,
+    .Testimonials .swiper-button-next {
+        top: 280px;
+    }
+    .Qow .swiper-button-prev,
+    .Qow .swiper-button-next {
+        top: 570px;
+    }
+    .Employees .swiper-button-prev,
+    .Employees .swiper-button-next {
+        top: 390px;
     }
     .Employees {
-        height: 400px !important;
+        height: 450px !important;
     }
     .Employees__body {
         margin-top: 60px !important;
+        height: 100%;
     }
     .Employees__body-subtitle h1{
         padding: 0 20px !important;
         font-size: var(--mobileTitleSize) !important; 
     }
     .Employees__body-items {
+        height: 100%;
         padding: 0 16px !important;
     }
     .Employees__items-item {
         border-radius: 24px !important;
         padding: 8px !important;
-        width: 320px !important;
+        width: 100% !important;
         height: 360px !important;
     }
     .Employees__item-image {
-        width: 304px;
+        width: 100%;
         height: 280px;
     }
     .Employees__item-image img {
@@ -118,11 +129,15 @@
         max-height: 100% !important;
     }
     .Testimonials {
-        height: auto !important;
+        height: 350px !important;
         padding: 0 20px !important;
     }
     .Testimonials__body {
         margin-top: 60px !important;
+        height: 100%;
+    }
+    .Testimonials__body-items {
+        height: 100%;
     }
     .Testimonials__body-subtitle h1 {
         font-size: var(--mobileTitleSize) !important;
@@ -130,7 +145,7 @@
     .Testimonials__items-item {
         padding: 11px !important;
         height: auto !important;
-        width: 320px !important;
+        width: 100% !important;
     }
     .Testimonials__item-title {
         margin-top: 8px !important;
@@ -183,14 +198,13 @@
         flex-direction: column  ;
     }
     .Call__item-svg {
-        width: 313px !important;
+        width: 100% !important;
         height: 294px !important;
         margin-top: 20px;
     }
     .Call__item-svg img {
         height: 100%;
         width: 100%;
-        margin-top: 7px;
     }
     .form__input-name {
         margin: 0 !important;

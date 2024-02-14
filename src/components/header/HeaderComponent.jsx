@@ -3,7 +3,7 @@ export default function HeaderComponent() {
     return (
         <div className='Header__body-items'>
             <div className="Header__items-logo">
-                <img src="/source/image/logo.svg" alt="" />
+                <img src="../../../source/image/logo.svg" alt="" />
             </div>
             <div className="Header__items-navigation">
                 <nav>

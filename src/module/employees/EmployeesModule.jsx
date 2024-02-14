@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import EmployeesComponent from '../../components/employees/EmployeesComponent'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay} from 'swiper/modules';
+import { Autoplay, Navigation} from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import { sliderEmployees } from '../../data/data'
 export default function EmployeesModule() {
   const [employees, setEmployees] = useState([])
@@ -33,7 +34,8 @@ export default function EmployeesModule() {
           spaceBetween={50}
           centeredSlides={true}
           slidesPerView={slidesPerView}
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation]}
+          navigation={true}
           // autoplay={{
           //   delay: 6000,
           //   disableOnInteraction: false,
