@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import '_mediaTable.scss';
 * {
     padding: 0;
     margin: 0;
@@ -390,6 +390,10 @@ body {
     height: 50px;
     padding: 10px;
     width: 240px;
+}
+
+.form__input::placeholder {
+    font-size: 15px;
 }
 
 .form__input-submit {

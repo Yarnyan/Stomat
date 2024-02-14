@@ -6,9 +6,20 @@ import 'swiper/css';
 import { sliderEmployees } from '../../data/data'
 export default function EmployeesModule() {
   const [employees, setEmployees] = useState([])
+  const [slidesPerView, setSlidesPerView] = useState(getInitialSlidesPerView());
   useEffect(() => {
     setEmployees(sliderEmployees)
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
+  const handleResize = () => {
+    setSlidesPerView(getInitialSlidesPerView());
+  };
+  const getInitialSlidesPerView = () => {
+    return window.innerWidth <= 768 ? 1 : 3;
+  };
   return (
     <div className='Employees'>
       <div className="Employees__body">
@@ -20,7 +31,7 @@ export default function EmployeesModule() {
           loop={true}
           spaceBetween={50}
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={1}
           modules={[Autoplay]}
           autoplay={{
             delay: 6000,

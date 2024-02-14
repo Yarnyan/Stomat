@@ -9,11 +9,11 @@ export default function HeaderComponent() {
                 <nav>
                     <ul className='Header__navigation-items'>
                         <li className='Navigation__item'>Специалисты</li>
-                        <li className='Navigation__item'>Услуги</li>
-                        <li className='Navigation__item'>Отзывы</li>
-                        <li className='Navigation__item'>Обратный звонок</li>
+                        <li className='Navigation__item hide'>Услуги</li>
+                        <li className='Navigation__item hide'>Отзывы</li>
+                        <li className='Navigation__item hide'>Обратный звонок</li>
                         <li className='Navigation__item'>Где нас найти?</li>
-                        <li className='Navigation__item'>Цены</li>
+                        <li className='Navigation__item hide'>Цены</li>
                     </ul>
                 </nav>
             </div>

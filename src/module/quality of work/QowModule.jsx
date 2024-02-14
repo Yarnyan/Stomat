@@ -7,9 +7,24 @@ import 'swiper/css/navigation';
 import { sliderQow } from '../../data/data';
 export default function QowModule() {
   const [sliderItems, setSliderItems] = useState([])
+  const [slidesPerView, setSlidesPerView] = useState(() => getInitialSlidesPerView());
+
+  function getInitialSlidesPerView() {
+    return window.innerWidth <= 768 ? 1 : 3;
+  }
+
   useEffect(() => {
-    setSliderItems(sliderQow)
+    setSliderItems(sliderQow);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
+
+  const handleResize = () => {
+    setSlidesPerView(getInitialSlidesPerView());
+  };
+
   return (
     <div className='Qow'>
       <div className="Qow__body">
@@ -17,13 +32,13 @@ export default function QowModule() {
           loop={true}
           spaceBetween={50}
           centeredSlides={true}
-          slidesPerView={1}
+          slidesPerView={slidesPerView}
           modules={[Autoplay, Navigation]}
           navigation={true}
-          autoplay={{
-            delay: 6000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 6000,
+          //   disableOnInteraction: false,
+          // }}
         >
           {sliderItems.map((item, index) => {
             return (
