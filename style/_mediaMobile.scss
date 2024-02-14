@@ -1,0 +1,246 @@
+@media(max-width: 500px) {
+    .Header {
+        padding: 0 20px !important; 
+        height: 63px !important;
+    }
+    .Header__items-logo {
+        width: 40px !important;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Header__items-logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .hide {
+        display: none !important;
+    }
+    .Header__navigation-items {
+        width: 100% !important;
+    }
+    .Navigation__item {
+        font-size: var(--mobileTextSize) !important;
+    }
+    .Navigation__item:nth-child(5) {
+        margin-left: 20px;
+    }
+    .Qow {
+        padding: 0 20px !important;
+        height: 570px !important; 
+    }
+    .Qow__body-item {
+        justify-content: flex-start !important;
+        padding: 0 !important;
+        flex-direction: column;
+        height: 100%;
+    }
+    .Qow__text-subtitle {
+        font-size: var(--mobileTitleSize) !important;
+        text-align: center;
+    }
+    .Qow__text-title {
+        margin-top: 12px !important;
+        font-size: var(--mobileTextSize) !important;
+        text-align: center;
+    }
+    .Qow__item-svg {
+        margin-top: 30px;
+        max-height: 302px;
+        width: 100%;
+    }
+    .Qow__item-svg img {
+        height: auto;
+        width: 100%;
+    }
+    .Testimonials .swiper-button-prev,
+    .Testimonials .swiper-button-next {
+        top: 280px;
+    }
+    .Qow .swiper-button-prev,
+    .Qow .swiper-button-next {
+        top: 570px;
+    }
+    .Employees .swiper-button-prev,
+    .Employees .swiper-button-next {
+        top: 390px;
+    }
+    .Employees {
+        height: 420px !important;
+    }
+    .Employees__body {
+        margin-top: 60px !important;
+        height: 100%;
+    }
+    .Employees__body-subtitle h1{
+        padding: 0 20px !important;
+        font-size: var(--mobileTitleSize) !important; 
+    }
+    .Employees__body-items {
+        height: 400px !important;
+        padding: 0 16px !important;
+    }
+    .Employees__items-item {
+        border-radius: 24px !important;
+        padding: 8px !important;
+        width: 100% !important;
+        height: 360px !important;
+    }
+    .Employees__item-image {
+        width: 100%;
+        height: 280px;
+    }
+    .Employees__item-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .Employees__item-subtitle h2 {
+        font-size: var(--mobileSubtitleSize) !important;
+        margin-top: 8px !important;
+    }
+    .Employees__item-title, 
+    .Employees__item-subtitle {
+        text-align: center;
+    }
+    .Employees__item-title p {
+        font-size: var(--mobileTextSize) !important;
+        margin-top: 4px !important;
+    }
+    .Services {
+        padding: 0 20px !important;
+        height: 100% !important;
+    }
+    .Services__body {
+        margin-top: 60px !important;
+    }
+    .Services__body-subtitle h1 {
+        font-size: var(--mobileTitleSize) !important; 
+    }
+    .Services__item-image,
+    .Services__items-item {
+        height: 320px !important;
+    }
+    .Services__item-image img {
+        height: 100%;
+        width: 100%;
+    }
+    .Services__body-items {
+        max-height: 100% !important;
+    }
+    .Testimonials {
+        height: 350px !important;
+        padding: 0 20px !important;
+    }
+    .Testimonials__body {
+        margin-top: 60px !important;
+        height: 100% !important;
+    }
+    .Testimonials__body-items {
+        height: 290px !important;
+    }
+    .Testimonials__body-subtitle h1 {
+        font-size: var(--mobileTitleSize) !important;
+    }
+    .Testimonials__items-item {
+        padding: 11px !important;
+        height: auto !important;
+        width: 100% !important;
+    }
+    .Testimonials__item-title {
+        margin-top: 8px !important;
+    }
+    .Testimonials__item-title h2 {
+        font-size: var(--mobileSubtitleSize) !important;
+    }
+    .Header__subtitle h1 {
+        font-size: var(--mobileSubtitleSize) !important;
+    }
+    .Avarat__body {
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .Call {
+        padding: 0 20px !important;
+        height: auto !important;
+    }
+    .Call__body {
+        margin-top: 60px !important;
+        border-radius: 24px !important;
+        padding: 0 !important;
+    }
+    .Call__text-title {
+        margin-top: 16px !important;
+        text-align: center;
+    }
+    .Call__text-title h2 {
+        font-size: var(--mobileTextSize) !important;
+    }
+    .Call__text-form {
+        margin-top: 20px !important;
+    }
+    .Call__body-items {
+        flex-direction: column;
+    }
+    .Call__text-subtitle h1 {
+        text-align: center !important;
+        font-size: var(--mobileTitleSize) !important;
+        font-weight: 500 !important;
+    }
+    .Call__item-text {
+        padding: 16px 15px 0 15px !important;
+    }
+    .form__inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 110px;
+        flex-direction: column  ;
+    }
+    .Call__item-svg {
+        width: 100% !important;
+        height: 294px !important;
+        margin-top: 20px;
+    }
+    .Call__item-svg img {
+        height: 100%;
+        width: 100%;
+    }
+    .form__input-name {
+        margin: 0 !important;
+    }
+    .Map {
+        padding: 0 20px !important;
+        height: auto !important;
+    }
+    .Map__body {
+        margin-top: 60px !important;
+    }
+    .Map__body-subtitle h1{
+        font-size: var(--mobileTitleSize) !important;
+    }
+    .map__address p {
+        font-size: var(--mobileSubtitleSize) !important; 
+    }
+    .map__item {
+        display: none !important;
+    }
+    .Footer {
+        padding: 0 20px !important;
+        height: 309px !important;
+        margin-top: 40px !important;
+    }
+    .Footer__body p {
+        margin-top: 40px !important;
+        text-align: center;
+        font-size: var(--mobileTitleSize) !important;
+    }
+    .Footer__body a {
+        height: 40px;
+        width: 40px;
+    }
+    .Footer__body a img {
+        width: 100%;
+        height: 100%;
+    }
+}
