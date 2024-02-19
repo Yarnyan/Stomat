@@ -22,7 +22,7 @@ export default function TestimonialsModule() {
     }, []);
     return (
         <div className='Testimonials'>
-            <div className="Testimonials__body">
+            <div className="Testimonials__body" id='testimonials'>
                 <div className="Testimonials__body-subtitle">
                     <h1>Отзывы</h1>
                 </div>

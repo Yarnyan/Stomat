@@ -5,6 +5,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/Stomatologia_№1" element={<MainPage />}/>
+        <Route path="/Stomatologia_№1/price" />
+        <Route path="/Stomatologia_№1/licence" />
       </Routes>
     </BrowserRouter>
   );

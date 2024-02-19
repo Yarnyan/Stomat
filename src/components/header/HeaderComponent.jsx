@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 export default function HeaderComponent() {
     return (
         <div className='Header__body-items'>
@@ -8,16 +9,25 @@ export default function HeaderComponent() {
             <div className="Header__items-navigation">
                 <nav>
                     <ul className='Header__navigation-items'>
-                        <li className='Navigation__item hide'>Специалисты</li>
-                        <li className='Navigation__item hide'>Услуги</li>
-                        <li className='Navigation__item hide'>Отзывы</li>
-                        <li className='Navigation__item'>Где нас найти?</li>
-                        <li className='Navigation__item'>Цены</li>
+                        <li className='Navigation__item hide'>
+                            <a href="#employees">Специалисты</a>
+                        </li>
+                        <li className='Navigation__item hide'>
+                            <a href='#services'>Услуги</a>
+                        </li>
+                        <li className='Navigation__item hide'>
+                            <a href='#testimonials'>Отзывы</a></li>
+                        <li className='Navigation__item'>
+                            <a href='#map'>Где нас найти?</a>
+                        </li>
+                        <li className='Navigation__item'>
+                            <Link to='/Stomatologia_№1/price'>Цены</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <div className='Header__navigation-button hide'>
-                <a href="#">
+                <a href="#call">
                     Заказать звонок
                 </a>
             </div>

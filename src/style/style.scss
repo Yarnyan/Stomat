@@ -24,6 +24,10 @@
     width: 5px;
 }
 
+a {
+    color: var(--text);
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--cardText);
 }
@@ -46,6 +50,10 @@ input {
     border: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;  
     width: 100%;
@@ -59,7 +67,10 @@ body {
     padding: 0 80px;
     height: 100px;
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
 }
 
 .Header__body,
@@ -88,14 +99,19 @@ body {
     transition: color 0.5s;
 }
 
+.Navigation__item a {
+    color: var(--text);
+    transition: color 0.5s;
+}
+
+.Navigation__item a:hover {
+    color: #d13838;
+}
+
 .Header__items-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.Navigation__item:hover {
-    color: #d13838;
 }
 
 .Header__items-logo {

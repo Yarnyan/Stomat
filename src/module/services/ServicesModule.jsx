@@ -9,7 +9,7 @@ export default function ServicesModule() {
     }, []);
     return (
         <div className='Services'>
-            <div className="Services__body">
+            <div className="Services__body" id='services'>
                 <div className="Services__body-subtitle">
                     <h1>Услуги</h1>
                 </div>

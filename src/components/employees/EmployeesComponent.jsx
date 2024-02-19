@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function EmployeesComponent({id, image, subtitle, title}) {
+  console.log(image)
   return (
     <div className='Employees__items-item'>
       <div className='Employees__item-image'>

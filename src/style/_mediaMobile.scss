@@ -1,3 +1,5 @@
+
+
 @media(max-width: 500px) {
     .Header {
         padding: 0 20px !important; 
@@ -78,8 +80,8 @@
         font-size: var(--mobileTitleSize) !important; 
     }
     .Employees__body-items {
-        height: 400px;
         padding: 0 16px !important;
+        height: 400px !important;
     }
     .Employees__items-item {
         border-radius: 24px !important;
