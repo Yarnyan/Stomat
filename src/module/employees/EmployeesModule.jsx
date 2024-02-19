@@ -8,11 +8,6 @@ import { sliderEmployees } from '../../data/data'
 export default function EmployeesModule() {
   const [employees, setEmployees] = useState([])
   const [slidesPerView, setSlidesPerView] = useState(window.innerWidth < 768 ? 1 : 3);
-  const [slideImages, setSlideImages] = useState([
-    '/source/image/slider1.svg',
-    '/source/image/slider2.svg',
-    '/source/image/slider3.svg',
-  ]);
   
 
   const handleResize = () => {
@@ -50,7 +45,7 @@ export default function EmployeesModule() {
           {employees.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <EmployeesComponent id={item.id} subtitle={item.subtitle} title={item.title} image={slideImages[index]}/>
+                <EmployeesComponent id={item.id} subtitle={item.subtitle} title={item.title} image={item.image}/>
               </SwiperSlide>
             )
           })}

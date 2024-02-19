@@ -11,22 +11,24 @@ export default function CallComponent() {
     return (
         <div className='Call__body-items'>
             <div className="Call__item-text">
-                <div className="Call__text-subtitle">
-                    <h1>Заказать обратный звонок</h1>
-                </div>
-                <div className="Call__text-title">
-                    <h2>
-                        Наш сотрудник перезвонит вам в ближайшее время.
-                    </h2>
+                <div>
+                    <div className="Call__text-subtitle">
+                        <h1>Заказать обратный звонок</h1>
+                    </div>
+                    <div className="Call__text-title">
+                        <h2>
+                            Наш сотрудник перезвонит вам в ближайшее время.
+                        </h2>
+                    </div>
                 </div>
                 <div className='Call__text-form'>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='form__inputs'>
-                            <input placeholder="Телефон" {...register("example")} required className='form__input form__input-mobile'/>
-                            <input placeholder="Имя" {...register("example")} required className='form__input form__input-name'/>
+                            <input placeholder="Телефон" {...register("example")} required className='form__input form__input-mobile' />
+                            <input placeholder="Имя" {...register("example")} required className='form__input form__input-name' />
                         </div>
                         <div className="form__input-submit">
-                            <input type="submit" value='Заказать звонок'/>
+                            <input type="submit" value='Заказать звонок' />
                         </div>
                     </form>
                 </div>

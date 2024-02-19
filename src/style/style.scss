@@ -210,6 +210,7 @@ body {
 .Employees__body {
     height: 100%;
     margin-top: 70px;
+    scroll-margin-top: 10rem;
 }
 
 .Employees__body-subtitle h1 {
@@ -257,6 +258,7 @@ body {
 }
 
 .Services__body {
+    scroll-margin-top: 10rem;
     margin-top: 70px;
 }
 
@@ -295,6 +297,7 @@ body {
 }
 
 .Testimonials__body {
+    scroll-margin-top: 10rem;
     height: 100%;
     margin-top: 70px;
 }
@@ -373,6 +376,7 @@ body {
 }
 
 .Call__body {
+    scroll-margin-top: 10rem;
     background-color: var(--prime);
     border-radius: 50px;
     margin-top: 70px;
@@ -391,6 +395,13 @@ body {
     color: var(--text)
 }
 
+.Call__item-text {  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Call__text-title {
     margin-top: 20px;
 }
@@ -402,7 +413,7 @@ body {
 }
 
 .Call__text-form {
-    margin-top: 200px;
+    margin-top: 30px;
     max-width: 500px;
 }
 
@@ -455,6 +466,7 @@ body {
 }
 
 .Map__body {
+    scroll-margin-top: 10rem;
     margin-top: 80px;
 }
 
