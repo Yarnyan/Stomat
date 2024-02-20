@@ -4,9 +4,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Stomatologia_№1" element={<MainPage />}/>
-        <Route path="/Stomatologia_№1/price" />
-        <Route path="/Stomatologia_№1/licence" />
+        <Route path="/Stomatologia_1" element={<MainPage />}/>
+        <Route path="/Stomatologia_1/price" />
+        <Route path="/Stomatologia_1/licence" />
       </Routes>
     </BrowserRouter>
   );

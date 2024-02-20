@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
+import { createCall } from '../../api/api'
 export default function CallComponent() {
     const {
         register,
@@ -7,7 +8,13 @@ export default function CallComponent() {
         watch,
         formState: { errors },
     } = useForm()
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = async (data) => {
+        try {
+            const response = await createCall(data)
+        } catch (error) {
+            console.error(error)
+        }
+    }
     return (
         <div className='Call__body-items'>
             <div className="Call__item-text">
@@ -24,8 +31,8 @@ export default function CallComponent() {
                 <div className='Call__text-form'>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='form__inputs'>
-                            <input placeholder="Телефон" {...register("example")} required className='form__input form__input-mobile' />
-                            <input placeholder="Имя" {...register("example")} required className='form__input form__input-name' />
+                            <input placeholder="Телефон" {...register("Телефон")} required className='form__input form__input-mobile' />
+                            <input placeholder="Имя" {...register("Имя")} required className='form__input form__input-name' />
                         </div>
                         <div className="form__input-submit">
                             <input type="submit" value='Заказать звонок' />
