@@ -11,7 +11,7 @@ export default function HeaderPriceComponent() {
                     </div>
                     <div className="Header__items-navigation">
                         <nav>
-                            <ul className='Header__navigation-items'>
+                            <ul className='Header__navigation-items' style={{width: '100%'}}>
                                 <li className='Navigation__item'>
                                     <Link to="/Stomatologia_1">На главную</Link>
                                 </li>
