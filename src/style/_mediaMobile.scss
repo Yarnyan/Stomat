@@ -1,5 +1,3 @@
-
-
 @media(max-width: 500px) {
     .Header {
         padding: 0 20px !important; 
@@ -54,6 +52,7 @@
     }
     .Qow__item-svg img {
         height: auto;
+        max-height: 302px;
         width: 100%;
     }
     .Testimonials .swiper-button-prev,
@@ -80,8 +79,8 @@
         font-size: var(--mobileTitleSize) !important; 
     }
     .Employees__body-items {
-        padding: 0 16px !important;
         height: 400px !important;
+        padding: 0 16px !important;
     }
     .Employees__items-item {
         border-radius: 24px !important;
@@ -131,7 +130,7 @@
         max-height: 100% !important;
     }
     .Testimonials {
-        height: 100% !important;
+        height: 350px !important;
         padding: 0 20px !important;
     }
     .Testimonials__body {
@@ -139,7 +138,7 @@
         height: 100% !important;
     }
     .Testimonials__body-items {
-        height: 315px !important;
+        height: 290px !important;
     }
     .Testimonials__body-subtitle h1 {
         font-size: var(--mobileTitleSize) !important;
@@ -229,7 +228,7 @@
     }
     .Footer {
         padding: 0 20px !important;
-        height: 309px !important;
+        height: 200px !important;
         margin-top: 40px !important;
     }
     .Footer__body p {

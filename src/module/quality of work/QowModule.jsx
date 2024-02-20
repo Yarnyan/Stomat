@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { sliderQow } from '../../data/data';
-
+import { sliderQowMobile } from '../../data/data'
 export default function QowModule() {
   const [sliderItems, setSliderItems] = useState([]);
   const [slidesPerView, setSlidesPerView] = useState(() => getInitialSlidesPerView());
@@ -16,7 +16,7 @@ export default function QowModule() {
   }
 
   useEffect(() => {
-    setSliderItems(sliderQow);
+    setSliderItems(window.innerWidth <= 768 ? sliderQowMobile : sliderQow);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -40,10 +40,10 @@ export default function QowModule() {
           modules={[Autoplay, Navigation, Pagination]}
           navigation={!isMobile}
           pagination={isMobile}
-          autoplay={{
-            delay: 6000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 6000,
+          //   disableOnInteraction: false,
+          // }}
         >
           {sliderItems.map((item, index) => (
             <SwiperSlide key={index}>

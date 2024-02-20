@@ -21,7 +21,7 @@ export default function HeaderComponent() {
                             <a href='#map'>Где нас найти?</a>
                         </li>
                         <li className='Navigation__item'>
-                            <Link to='/Stomatologia_№1/price'>Цены</Link>
+                            <Link to='/Stomatologia_1/price'>Цены</Link>
                         </li>
                     </ul>
                 </nav>

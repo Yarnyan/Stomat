@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function FooterModule() {
   return (
     <div className='Footer'>
@@ -7,7 +7,11 @@ export default function FooterModule() {
             <a href="https://vk.com/public166584336" target='_blank'>
                 <img src="/source/image/socials.svg" alt="" />
             </a>
-            <p>ИМЕЮТСЯ ПРОТИВОКАЗАНИЯ. НЕОБХОДИМО ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ</p>
+            <div className="Footer__body-items">
+              <Link to="/Stomatologia_1/license">
+                <p>Лицензия на осуществление медицинской помощи</p>
+              </Link>
+            </div>
         </div>
     </div>
   )
