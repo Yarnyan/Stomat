@@ -1,5 +1,5 @@
 import axios from 'axios'
-const apiLink = "http://localhost:8080"
+const apiLink = "https://localhost:8080"
 const POST = async (link, data) => {
     try {
         const response = await axios.post(apiLink + link, data, {
