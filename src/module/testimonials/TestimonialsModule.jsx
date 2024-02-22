@@ -34,10 +34,10 @@ export default function TestimonialsModule() {
                         slidesPerView={slidesPerView}
                         modules={[Autoplay, Pagination]}
                         pagination={true}
-                        // autoplay={{
-                        // delay: 6000,
-                        // disableOnInteraction: false,
-                        // }}
+                        autoplay={{
+                        delay: 6000,
+                        disableOnInteraction: false,
+                        }}
                     >
                         {testimonials.map((item, index) => {
                             return (

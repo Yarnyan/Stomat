@@ -16,7 +16,7 @@ export default function QowModule() {
   }
 
   useEffect(() => {
-    setSliderItems(window.innerWidth <= 768 ? sliderQowMobile : sliderQow);
+    setSliderItems(sliderQow);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -40,10 +40,10 @@ export default function QowModule() {
           modules={[Autoplay, Navigation, Pagination]}
           navigation={!isMobile}
           pagination={isMobile}
-          // autoplay={{
-          //   delay: 6000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 6000,
+            disableOnInteraction: false,
+          }}
         >
           {sliderItems.map((item, index) => (
             <SwiperSlide key={index}>
