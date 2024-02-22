@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from "react-hook-form"
 import { createCall } from '../../api/api'
 export default function CallComponent() {
+    const [showCall, setShowCall] = useState(false);
     const {
         register,
         handleSubmit,
         watch,
+        reset,
         formState: { errors },
     } = useForm()
     const onSubmit = async (data) => {
         try {
+            setShowCall(true);
             const response = await createCall(data)
+            setTimeout(() => {
+                setShowCall(false);
+            }, 1500);
+            reset();
         } catch (error) {
             console.error(error)
         }
@@ -32,12 +39,15 @@ export default function CallComponent() {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='form__inputs'>
                             <input placeholder="Телефон" {...register("Телефон")} required className='form__input form__input-mobile' />
-                            <input placeholder="Имя" {...register("Имя")} required className='form__input form__input-name' />
+                            <input placeholder="Фио" {...register("Имя")} required className='form__input form__input-name' />
                         </div>
                         <div className="form__input-submit">
                             <input type="submit" value='Заказать звонок' />
                         </div>
                     </form>
+                    <div className={`Call__text-call ${showCall ? '' : 'hide'}`}>
+                        <p>Заявка успешно оформлена</p>
+                    </div>
                 </div>
             </div>
             <div className="Call__item-svg">
@@ -46,3 +56,4 @@ export default function CallComponent() {
         </div>
     )
 }
+
