@@ -10,8 +10,8 @@ async def handle(request):
     print(f'Received data from frontend: Телефон - {phone}, Имя - {name}')
     if phone and name:
 
-        bot_token = '7181027635:AAEk7_WlRyWxfZk1AhpiK552oaUFuDJyang'
-        chat_id = '937545901' #mama - 5251084945, nikita - 937545901
+        bot_token = ''
+        chat_id = ''
         message = f'Новые данные: Телефон - {phone}, Имя - {name}'
         send_message(bot_token, chat_id, message)
 
