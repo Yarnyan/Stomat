@@ -7,9 +7,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Stomatologia_1" element={<MainPage />}/>
-        <Route path="/Stomatologia_1/price" element={<PricePage />}/>
-        <Route path="/Stomatologia_1/license" element={<LicensePage />}/>
+        <Route path="/" element={<MainPage />}/>
+        <Route path="/price" element={<PricePage />}/>
+        <Route path="/license" element={<LicensePage />}/>
       </Routes>
     </BrowserRouter>
   );

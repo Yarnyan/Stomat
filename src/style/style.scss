@@ -115,7 +115,15 @@ body {
 }
 
 .Header__items-logo {
-    width: 150px;
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+
+.Header__items-logo > h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 15px;
 }
 
 .Header__navigation-button {
@@ -258,6 +266,12 @@ body {
     margin-top: 12px;
 }
 
+.Employees__item-image img {
+    width: 100%;
+    max-height: 463px;
+    border-radius: 50px;
+}
+
 //Services
 
 .Services {
@@ -353,6 +367,11 @@ body {
 .css-1wlk0hk-MuiAvatar-root {
     width: 100% !important;
     height: 100% !important;
+}
+
+.MuiAvatar-root {
+    height: 60px;
+    width: 60px;
 }
 
 .css-i4bv87-MuiSvgIcon-root {
@@ -545,4 +564,38 @@ body {
     margin-top: 80px;
     font-size: var(--subtitleSize);
     font-weight: 400;
+}
+
+//license
+
+.License {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.License__body {
+    width: 973px;
+    margin: 0 auto;
+}
+
+//price
+
+.Price {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Price__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.Price__body img {
+    width: 900px;
+    height: auto;
+    margin-top: 20px;
 }

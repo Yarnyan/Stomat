@@ -1,10 +1,11 @@
 import axios from 'axios'
-const apiLink = "https://localhost:8080"
+const apiLink = "https://650b-89-111-172-61.ngrok-free.app"
 const POST = async (link, data) => {
     try {
         const response = await axios.post(apiLink + link, data, {
             headers: {
                 'Content-Type': 'application/json',
+                'ngrok-skip-browser-warning': '69420'
             },
         });
         return response

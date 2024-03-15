@@ -8,7 +8,7 @@ export default function FooterModule() {
                 <img src="/source/image/socials.svg" alt="" />
             </a>
             <div className="Footer__body-items">
-              <Link to="/Stomatologia_1/license">
+              <Link to="/license">
                 <p>Лицензия на осуществление медицинской помощи</p>
               </Link>
             </div>

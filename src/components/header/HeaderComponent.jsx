@@ -5,6 +5,7 @@ export default function HeaderComponent() {
         <div className='Header__body-items'>
             <div className="Header__items-logo">
                 <img src="../../../source/image/logo.svg" alt="" />
+                <h1>СТОМАТОЛОГИЯ №1</h1>
             </div>
             <div className="Header__items-navigation">
                 <nav>
@@ -17,11 +18,11 @@ export default function HeaderComponent() {
                         </li>
                         <li className='Navigation__item hide'>
                             <a href='#testimonials'>Отзывы</a></li>
-                        <li className='Navigation__item'>
+                        <li className='Navigation__item hide'>
                             <a href='#map'>Где нас найти?</a>
                         </li>
                         <li className='Navigation__item'>
-                            <Link to='/Stomatologia_1/price'>Цены</Link>
+                            <Link to='/price'>Цены</Link>
                         </li>
                     </ul>
                 </nav>

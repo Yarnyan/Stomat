@@ -24,43 +24,43 @@ export const sliderEmployees = [
         id: 1,
         subtitle: 'Фаздинов Тимур Радикович',
         title: 'Главный врач, хирург, ортопед',
-        image: '/source/image/doctorImage1.png',
+        image: '/source/image/doctorImage4.jpeg',
     },
     {
         id: 2,
         subtitle: 'Минеев Сергей Михайлович',
         title: 'Ортопед',
-        image: '/source/image/doctorImage1.png',
+        image: '/source/image/doctorImage5.jpeg',
     },
     {
         id: 3,
         subtitle: 'Пашкова Наталья Алексеевна',
         title: 'Зубной врач',
-        image: '/source/image/doctorImage1.png',
+        image: '/source/image/doctorImage2.jpeg',
     },
     {
         id: 4,
         subtitle: 'Гришенкова Людмила Владимировна',
         title: 'Зубной Врач',
-        image: '/source/image/doctorImage1.png',
+        image: '/source/image/doctorImage1.jpeg',
     },
     {
         id: 5,
         subtitle: 'Чемякина Юлия Владимировна',
         title: 'Директор клиники, проф.гигиенист, рентген-лаборант',
-        image: '/source/image/doctorImage1.png',
+        image: '/source/image/doctorImage6.jpeg',
     },
     {
         id: 6,
-        subtitle: 'Черезова Татьяна Ильинична',
+        subtitle: 'Cмирных Яна Ринатовна',
         title: 'Ассистент стоматолога',
-        image: '/source/image/doctorImage1.png',
+        image: '/source/image/doctorImage7.jpeg',
     },
     {
         id: 7,
         subtitle: 'Шарый Ксения Николаевна',
         title: 'Зубной техник',
-        image: '/source/image/doctorImage1.png',
+        image: '/source/image/doctorImage3.jpeg',
     },
 ]
 
@@ -96,35 +96,35 @@ export const Testimonials = [
         id: 1,
         name: 'Светлана',
         rating: 5,
-        img: '/source/image/avatar.png',
+        img: '',
         title: 'Отличная клиника! Врачи здесь высококвалифицированные, а цены приятно удивляют. Очень довольна результатом и обслуживанием. Однозначно рекомендую!'
     },
     {
         id: 2,
         name: 'Аркадий',
         rating: 5,
-        img: '/source/image/avatar.png',
+        img: '',
         title: 'Очень дружелюбный персонал, приемлемые цены. Особенно хочется отметить хирурга — Тимура Фадзинова, после его удаления никогда ничего не болит, очень аккуратный и внимательный доктор. На любой вопрос всегда вежливо и тепреливо отвечает.'
     },
     {
         id: 3,
         name: 'Светлана',
         rating: 5,
-        img: '/source/image/avatar.png',
-        title: 'Спасибо большое докторам за прекрасно проделанную большую работу по ортодонтическому лечению. Очень довольна результатом! С удовольствием рекомендую своим знакомым СТОМАТОЛОГИЮ Nº 1'
+        img: '',
+        title: 'Отличные специалисты, доступные цены'
     },
     {
         id: 4,
-        name: 'Светлана',
+        name: 'Нина',
         rating: 5,
-        img: '/source/image/avatar.png',
-        title: 'Спасибо большое докторам за прекрасно проделанную большую работу по ортодонтическому лечению. Очень довольна результатом! С удовольствием рекомендую своим знакомым СТОМАТОЛОГИЮ Nº 1'
+        img: '',
+        title: 'Прекрасные врачи,мастера своего дела. Всем советую. Врачи добрые и внимательные,качество лечения на высшем уровне. Порадовали цены,в два раза ниже,чем в других клиниках.'
     },
     {
         id: 5,
-        name: 'Светлана',
+        name: 'Юлия',
         rating: 5,
-        img: '/source/image/avatar.png',
+        img: '',
         title: 'Спасибо большое докторам за прекрасно проделанную большую работу по ортодонтическому лечению. Очень довольна результатом! С удовольствием рекомендую своим знакомым СТОМАТОЛОГИЮ Nº 1'
     },
 ]
