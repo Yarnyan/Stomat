@@ -1,3 +1,8 @@
+# Сайт для стоматологической клиники
+
+Технологии: python(backend), react, redux, ui-react
+Ссылка на сайт: https://stomatologiya-1.ru/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
