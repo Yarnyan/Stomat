@@ -4,33 +4,35 @@ import asyncio
 import requests
 import ssl
 async def handle(request):
+    print('test1')
     data = await request.json()
-    phone = data.get('Телефон', '')
-    name = data.get('Имя', '')
-    print(f'Received data from frontend: Телефон - {phone}, Имя - {name}')
+    phone = data.get('РўРµР»РµС„РѕРЅ', '')
+    name = data.get('РРјСЏ', '')
+    print(f'Received data from frontend: РўРµР»РµС„РѕРЅ - {phone}, РРјСЏ - {name}')
     if phone and name:
 
         bot_token = ''
         chat_id = ''
-        message = f'Новые данные: Телефон - {phone}, Имя - {name}'
+        message = f'РќРѕРІС‹Рµ РґР°РЅРЅС‹Рµ: РўРµР»РµС„РѕРЅ - {phone}, РРјСЏ - {name}'
         send_message(bot_token, chat_id, message)
 
         return web.Response(
-            text='Данные успешно получены и отправлены в Telegram',
-            headers={'Access-Control-Allow-Origin': 'https://stomatologiya-1.ru/'}
+            text='Р”Р°РЅРЅС‹Рµ СѓСЃРїРµС€РЅРѕ РїРѕР»СѓС‡РµРЅС‹ Рё РѕС‚РїСЂР°РІР»РµРЅС‹ РІ Telegram',
+            headers={'Access-Control-Allow-Origin': '*'}
         )
     else:
         return web.Response(
-            text='Некорректные данные',
-            headers={'Access-Control-Allow-Origin': 'https://stomatologiya-1.ru/'}
+            text='РќРµРєРѕСЂСЂРµРєС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ',
+            headers={'Access-Control-Allow-Origin': '*'}
         )
 
 async def handle_options(request):
+    print('test')
     return web.Response(
         headers={
-            'Access-Control-Allow-Origin': 'https://stomatologiya-1.ru/',
+            'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'POST, OPTIONS',
-            'Access-Control-Allow-Headers': 'Content-Type, X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+            'Access-Control-Allow-Headers': 'Content-Type, X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, ngrok-skip-browser-warning',
             'Access-Control-Allow-Credentials': 'true',
         }
     )
@@ -48,4 +50,6 @@ app.router.add_route('POST', '/submit', handle)
 app.router.add_route('OPTIONS', '/submit', handle_options)
 
 if __name__ == '__main__':
+    print('start')
     web.run_app(app, port=8080)
+    print('success')
